@@ -4,26 +4,26 @@ A Java-based command-line application for managing a parking lot. This applicati
 
 **Table of Contents**
 
-•	Features
-•	Prerequisites
-•	How to Run
-•	Commands
-•	Example Usage
-•	Contributing
-•	License
+•	Features  
+•	Prerequisites  
+•	How to Run  
+•	Commands  
+•	Example Usage  
+•	Contributing  
+•	License  
 
 **Features**
 
-Create a parking lot with a specified capacity.
-Park a car with a registration number and color.
-Remove a car from a parking slot.
-Display the current status of the parking lot.
-Find registration numbers of cars with a particular color.
-Find the slot number for a specific registration number.
-Find slot numbers for cars with a particular color.
-Interactive command prompt-based shell.
+•	Create a parking lot with a specified capacity.  
+•	Park a car with a registration number and color.  
+•	Remove a car from a parking slot.  
+•	Display the current status of the parking lot.  
+•	Find registration numbers of cars with a particular color.  
+•	Find the slot number for a specific registration number.  
+•	Find slot numbers for cars with a particular color.  
+•	Interactive command prompt-based shell.  
 
-**Prerequisites**
+**Prerequisites**  
 Java (JDK) installed on your machine.
 
 **How to Run**
@@ -46,18 +46,33 @@ Java (JDK) installed on your machine.
 •	**exit**: Exit the application.
 
 **Create a parking lot:**  
-$ create_parking_lot 6
+$ create_parking_lot 6  
 Created a parking lot with 6 slots 
 
 **Park cars:**  
-$ park KA-01-HH-1234 White
-Allocated slot number: 1
-$ park KA-01-HH-9999 White
+$ park KA-01-HH-1234 White  
+Allocated slot number: 1  
+$ park KA-01-HH-9999 White  
 Allocated slot number: 2  
 
 **Display the status:**  
+$ status  
+Slot No. Registration No Colour  
+1 KA-01-HH-1234 White  
+2 KA-01-HH-9999 White  
 
+**Find registration numbers for cars with a particular color:**  
+$ registration_numbers_for_cars_with_colour White  
+KA-01-HH-1234, KA-01-HH-9999
 
+**Find the slot number for a specific registration number:**  
+$ slot_number_for_registration_number KA-01-HH-9999
+2
 
+**Find slot numbers for cars with a particular color:**  
+$ slot_numbers_for_cars_with_colour White  
+1, 2
 
+**Exit the application:**  
+$ exit
 
